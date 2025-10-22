@@ -1,8 +1,21 @@
 import React from "react";
+
+//Importando os estilos
 import "../styles/FormContainer.css";
+
+//Importando o componente filho
 import InformacaoTransicao from "./InformacaoTransicao";
 
+//Importar Hooks e Contexto
+import { useContext } from "react";
+import { FormContext } from "../context/formulario"; //Consumir o contexto
+
 const FormContainer = () => {
+
+    //Constante do nome que será consumido do contexto
+    const formState = useContext(FormContext);
+    console.log(formState);
+
   return (
     <div className="form-container">
       {/**Cabeçalho antes */}
