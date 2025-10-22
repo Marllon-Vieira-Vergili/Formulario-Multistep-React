@@ -1,0 +1,79 @@
+/*Estilização geral - Form container principal*/
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 2rem;
+    
+}
+
+/*Estilização do cabeçalho do formulário*/
+.form-header{
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.form-header h2{
+    text-transform: uppercase;
+    padding: 1rem;
+
+}
+
+.form-header p{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/*Estilização do FormInput -Estilos gerais nos labels e inputs*/
+.form-input{
+
+    box-shadow: rgba(145, 145, 145, 0.8) 0px 3px 3px 4px;
+    border-radius: 5px;
+    padding: 1rem;
+    justify-items: center;
+}
+
+/*Estilos internos do formLabel dentro do formInput*/
+.form-label{
+    padding: 1rem;
+}
+
+.form-label label{
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.form-label input{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 400px;
+}
+
+/*EStilos dos grupos de botões - formButtons*/
+.form-buttons{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+/*Estilo separado dos botões*/
+button{
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ffffff;
+    padding: 0.6rem;
+}

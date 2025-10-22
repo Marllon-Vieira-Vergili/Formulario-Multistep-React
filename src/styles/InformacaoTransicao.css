@@ -1,0 +1,27 @@
+
+/*Estilização do componente que ficará no cabeçalho dos passos seguintes*/
+.container-steps{
+
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+    text-align: center;
+    margin: 1rem;
+    gap: 2rem;
+    
+}
+
+
+/*Ajuste do SVG Step*/
+.step svg{
+    font-size: 35px;
+    
+}
+
+/*Step detectado como ativo no momento*/
+.active svg{
+    color: #2873ed;
+    
+}
+
