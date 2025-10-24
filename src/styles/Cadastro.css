@@ -1,0 +1,22 @@
+/*Estilos internos do formLabel dentro do formInput*/
+.form-label{
+    padding: 1rem;
+}
+
+.form-label label{
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.form-label input{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 500px;
+    border: none;
+}

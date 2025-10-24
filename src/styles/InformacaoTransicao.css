@@ -11,17 +11,28 @@
     gap: 2rem;
     
 }
+/*COntainer de steps não marcados*/
+.step svg{
+    color: #cccccc;
+}
+
+/*Parágrafo ativo*/
+.step.active p{
+    color: #000000;
+    font-weight: bold;
+}
 
 
-/*Ajuste do SVG Step*/
+/*Ajuste do SVG (tamanho) Step*/
 .step svg{
     font-size: 35px;
-    
 }
 
+
 /*Step detectado como ativo no momento*/
-.active svg{
+.step.active svg{
     color: #2873ed;
-    
 }
+
+
 

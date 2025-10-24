@@ -9,3 +9,21 @@
 html{
   background-color: rgb(241, 241, 241);
 }
+
+
+/*Estilo separado dos botões no contexto todo*/
+button{
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/*EStilo dos inputs no contexto todo*/
+input{
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border: none;
+    box-shadow: rgba(145, 145, 145, 0.8) 0px 3px 3px 4px;
+    border-radius: 5px;
+}

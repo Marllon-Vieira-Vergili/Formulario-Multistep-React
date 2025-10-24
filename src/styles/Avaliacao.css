@@ -1,0 +1,106 @@
+/*Container geral dos Emojis*/
+
+.avaliacao-container{
+
+  padding: 1rem;
+
+}
+
+/*Escrita*/
+.avaliacao-container p{
+  text-align: center;
+  color: black;
+  
+  font-size: larger;
+  margin: 1rem;
+
+}
+
+/*Container armazenando todos os emojis*/
+.container-checkbox{
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap
+}
+
+/*Ocultar o Checkbox (O emoji será o checkbox)*/
+.checkbox-style input[type="checkbox"]{
+  display:none;
+}
+
+
+
+/*Estilos de cada emoji separadamente label*/
+.checkbox-style label{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*Estilos de cada emoji separadamente icone emoji*/
+.checkbox-style .emoji{
+
+  font-size: 2.5rem;
+  color: #888;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+  
+}
+
+/*Ao clicar em cima do emoji*/
+.checkbox-style .emoji.selected {
+  color: #2873ed !important;
+  font-size: 3rem;
+}
+
+/*Estilos de cada Span */
+.checkbox-style label span{
+
+  font-weight: bold;
+  margin-top: 0.2rem;
+}
+
+
+/*Estilos dos emojis - Cores*/
+
+.emoji.frown{
+  color: rgb(255, 0, 0);
+}
+.emoji.neutral{
+  color: rgb(255, 255, 0);
+}
+.emoji.smile{
+  color: rgb(0, 255, 0);
+}
+.emoji.love{
+  color: rgb(255, 0, 174);
+}
+
+/*Criando o método de keyframe pulseEmojus para aumentar a escala dos emojis*/
+@keyframes pulsarEmojis{
+  
+  0%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.1);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+/*animar os emojis com pulsações chamando o keyframe*/
+.checkbox-style input + label .emoji{
+  animation: pulsarEmojis 2s infinite;
+}
+
+
+

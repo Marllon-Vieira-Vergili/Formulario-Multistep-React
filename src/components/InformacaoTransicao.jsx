@@ -11,42 +11,40 @@
 */
 
 //import dos Estilos 
-import {AiOutlineUser, AiOutlineStar} from 'react-icons/ai'; //Inscrição/Avaliação
+import {AiOutlineUser, AiOutlineStar, AiOutlineSmile } from 'react-icons/ai'; //Inscrição/Avaliação
 import {FiSend} from 'react-icons/fi'; //Feedback
-import { AiOutlineSmile } from 'react-icons/ai'; //Agradecimento
+
 
 //Import do CSS
 import '../styles/InformacaoTransicao.css';
 
 import React from "react";
 
-const InformacaoTransicao = ({passos}) => {
+//Vai receber como props o indice atual para atualizar
+const InformacaoTransicao = ({currentIndex}) => {
 
+    const steps = [
+        {icon: <AiOutlineUser/>, label: "Cadastro"},
+        {icon: <FiSend/>, label: "Feedback"},
+        {icon: <AiOutlineStar/>, label: "Avaliação"},
+        {icon: <AiOutlineSmile/>, label: "Agradecimento"},
+    ];
 
     return(
 
         <div className='container-steps'>
 
-            <div className='step active'>
-                 <AiOutlineUser/>
-            <p>Cadastro </p>
-            </div>
-           
-            <div className='step'>
-                <FiSend/>
-                <p>Feedback </p>
-            </div>
-            
-            <div className='step'>
-                <AiOutlineStar/>
-                <p>Avaliação</p>
-            
-            </div>
-            
-            <div className='step'>
-            <AiOutlineSmile/>
-            <p>Agradecimento</p>
-            </div>
+            {/**Mapear todos os valores um para cada div */}
+
+            {steps.map((step, index) => (
+                <div key={index} 
+                className={`step ${index === currentIndex ? 'active' : ''}`}>
+                   
+                    {step.icon}
+                    <p>{step.label}</p>
+                </div>
+            ))}
+                
             
         </div>
     );

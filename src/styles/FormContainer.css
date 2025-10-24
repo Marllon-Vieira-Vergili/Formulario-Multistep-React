@@ -35,33 +35,13 @@
     justify-items: center;
 }
 
-/*Estilos internos do formLabel dentro do formInput*/
-.form-label{
-    padding: 1rem;
-}
 
-.form-label label{
-    text-transform: uppercase;
-    padding: 1rem;
-}
-
-.form-label input{
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 1rem;
-    border: 1px solid #ccc;
-    text-align: center;
-    width: 400px;
-}
 
 /*EStilos dos grupos de botões - formButtons*/
 .form-buttons{
     display: flex;
     justify-content: space-between;
     
-
 }
 
 /*Estilo separado dos botões*/

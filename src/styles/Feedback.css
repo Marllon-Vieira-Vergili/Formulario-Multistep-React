@@ -1,0 +1,25 @@
+.feedback-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.feedback-container p{
+    color: black;
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+textarea{
+    
+    align-self: center;
+    width: 400px;
+    height: 200px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border: none;
+    resize: none;
+    box-shadow: rgba(145, 145, 145, 0.8) 0px 3px 3px 4px;
+    border-radius: 5px;
+}
